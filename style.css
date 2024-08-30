@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=PT+Mono&display=swap');
+* {
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+}
+:root {
+ --bg1:azure;
+ --heading:#01aef0;
+ --shad:rgb(147, 145, 145);
+ --para:#002d88;
+ --wh:white;
+ --shadow:#ffb600;
+ --boder-shadow:#fc9400;
+
+}
+h1 , h2 ,h3 ,h4 {
+    font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--heading);
+  font-size: 3rem;
+}
+h2 {
+    font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--boder-shadow);
+}
+p {
+    font-family: "PT Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--para);
+}
+a {
+    text-decoration: none;
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+   
+}
+li {
+    list-style: none;
+    
+    font-family: "PT Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--para);
+   cursor: pointer;
+}
+li:hover {
+    color: #fc9400;
+}
+i {
+    font-size: 3rem;
+    color: var(--heading);
+    padding: 0rem 1rem;
+    cursor: pointer;
+}
+i:hover {
+    color: var(--para);
+}
+.contant {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.contant-a {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.contant-b {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contant-c {
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+}
+
+.section {
+    padding: 7rem 0rem;
+    text-align: center;
+}
+/* --header--- */
+
+header {
+    background-image: url(img/back.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+ .nav {
+    padding: 1rem 0rem;
+ }
+.parts {
+    padding: 0rem 1rem;
+    color: var(--para);
+}
+.parts:hover,.parts:active {
+    color: var(--heading);
+    border-bottom: 0.1rem solid var(--heading);
+    transition: 0.3s ease-in-out;
+}
+.manue {
+    display: none;
+}
+#menu-bar {
+     display: none;
+}
+.home {
+    padding: 1rem 2rem;
+}
+.home > img  {
+    width: 800px;
+}
+
+.home-data {
+    padding: 4rem;
+    padding-top: 12rem;
+}
+.home-data > h1 {
+    font-size: 3.8rem;
+    color: var(--para);
+}
+.home-data > h1 > span {
+    font-size: 3rem;
+    color: var(--heading);
+}
+.btn {
+    font-size: 2rem;
+    color: var(--wh);
+    margin-top: 2rem;
+    border: none;
+    border-radius: 3rem;
+    background-color: var(--shadow);
+    padding: 1rem 2rem;
+}
+.btn:hover {
+    background-color: var(--boder-shadow);
+    cursor: pointer;
+    box-shadow: 0rem 0rem 0.5rem var(--shad);
+}
+/* ----main--- */
+.pic {
+    width: 500px;
+    margin: 2rem 0rem;
+    height: 400px;
+}
+.about-left {
+    padding: 3rem 1rem;
+    padding-top: 7rem;
+}
+.about {
+    background-color: #e4f3fa;
+}
+.box {
+    width: 400px;
+    margin: 2rem;
+    cursor: pointer;
+    border: 0.2rem solid var(--shad);
+    padding: 2rem;
+}
+.box:hover {
+    background-color: azure;
+    border: none;
+    box-shadow: 0rem 0rem 1.5rem var(--shad);
+}
+.box-a {
+    padding: 2rem 0rem;
+}
+.box > img {
+    width: 300px;
+    height: 200px;
+}
+.box > h3 {
+    font-size: 2.2rem;
+}
+.achieve {
+    padding: 2rem 0rem;
+    background-color: #ecfcf9;
+}
+.products > img {
+    width: 200px;
+    margin: 2rem;
+}
+/* ---footer--- */
+footer {
+    background-image: linear-gradient(90deg, white 0%, #fcfefe 35%, white 100%);
+}
+.four:hover {
+    cursor: pointer;
+}
+.para:hover {
+    color: var(--boder-shadow);
+    cursor: pointer;
+}
+
+@media (max-width:984px) {
+    .parts {
+        display: none;
+    }
+    #menu-bar, .manue {
+        display: block;
+    }
+    .home-data {
+        padding: 1rem 0rem;
+    }
+    .about-left {
+        padding: 3rem 0rem;
+    }
+    .pic {
+        padding: 2rem 1rem;
+    }
+    .home > img {
+        width: 400px;
+    }
+}
